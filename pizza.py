@@ -10,7 +10,7 @@ class Pizza:
         self.size = size
         self.toppings = []
 
-    def getPrice(self):
+    def get_price(self):
         """Price of pizza depends on size and number of toppings."""
         if self.size == SMALL:
             price = 120 + 20*len(self.toppings)

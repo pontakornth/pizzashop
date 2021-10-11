@@ -20,7 +20,7 @@ def order_pizza(pizza):
     else:
         description += " plain cheeze pizza"
     print(f"A {description}")
-    print("Price:", pizza.getPrice())
+    print("Price:", pizza.get_price())
 
 
 if __name__ == "__main__":
