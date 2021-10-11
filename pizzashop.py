@@ -15,7 +15,7 @@ def order_pizza(item: Pizza):
 
     # create printable description of the pizza such as
     # "small pizza with muschroom" or "small plain pizza"
-    print(f"A {str(item)}")
+    print(f"A {item}")
     print("Price:", item.get_price())
 
 
