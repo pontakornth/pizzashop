@@ -15,13 +15,18 @@ def order_pizza(item: Pizza):
 
     # create printable description of the pizza such as
     # "small pizza with muschroom" or "small plain pizza"
-    description = item.size
-    if item.toppings:
-        description += " pizza with "+ ", ".join(item.toppings)
-    else:
-        description += " plain cheeze pizza"
+    description = describe(item)
     print(f"A {description}")
     print("Price:", item.get_price())
+
+
+def describe(item):
+    description = item.size
+    if item.toppings:
+        description += " pizza with " + ", ".join(item.toppings)
+    else:
+        description += " plain cheeze pizza"
+    return description
 
 
 if __name__ == "__main__":
