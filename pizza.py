@@ -22,7 +22,7 @@ class Pizza:
             raise ValueError("Unknown pizza size "+self.size)
         return price
     
-    def addTopping(self, topping):
+    def add_topping(self, topping):
         """Add a topping to the pizza"""
         if topping not in self.toppings:
             self.toppings.append(topping)

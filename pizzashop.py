@@ -26,9 +26,9 @@ def order_pizza(pizza):
 
 if __name__ == "__main__":
     pizza1 = Pizza(pizza.SMALL)
-    pizza1.addTopping("mushroom")
-    pizza1.addTopping("tomato")
-    pizza1.addTopping("pinapple")
+    pizza1.add_topping("mushroom")
+    pizza1.add_topping("tomato")
+    pizza1.add_topping("pinapple")
     order_pizza(pizza1)
 
     # a plain pizza
@@ -37,5 +37,5 @@ if __name__ == "__main__":
 
     # pizza with only one topping
     pizza3 = Pizza(pizza.LARGE)
-    pizza3.addTopping("seafood")
+    pizza3.add_topping("seafood")
     order_pizza(pizza3)
