@@ -1,5 +1,4 @@
 from pizza import *
-import pizza
 
 
 # This function shows a limitation on tool-assisted
@@ -14,23 +13,23 @@ def order_pizza(item: Pizza):
     """Print a description of a pizza, along with its price."""
 
     # create printable description of the pizza such as
-    # "small pizza with muschroom" or "small plain pizza"
+    # "small pizza with mushroom" or "small plain pizza"
     print(f"A {item}")
     print("Price:", item.get_price())
 
 
 if __name__ == "__main__":
-    pizza1 = Pizza(pizza.SMALL)
+    pizza1 = Pizza(PizzaSize.small)
     pizza1.add_topping("mushroom")
     pizza1.add_topping("tomato")
     pizza1.add_topping("pinapple")
     order_pizza(pizza1)
 
     # a plain pizza
-    pizza2 = Pizza(pizza.MEDIUM)
+    pizza2 = Pizza(PizzaSize.medium)
     order_pizza(pizza2)
 
     # pizza with only one topping
-    pizza3 = Pizza(pizza.LARGE)
+    pizza3 = Pizza(PizzaSize.large)
     pizza3.add_topping("seafood")
     order_pizza(pizza3)
